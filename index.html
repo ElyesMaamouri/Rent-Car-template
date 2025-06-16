@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Boxicons CDN Link -->
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="shadow-on-scroll nav-menu">
+        <nav class="top-menu">
+
+            <div class="main-container navbar">
+                <i class='bx bx-menu' id="menu-toggle"></i>
+                <div class="logo"><a href="#"> <img class="logo-website" src="./assets/img/logo.svg"
+                            alt="exemple.com" /></a></div>
+                <div class="my-overlay" id="menu-overlay" onclick="closeMenu()"></div>
+
+                <div class="nav-links" id="links-web-site">
+                    <div class="sidebar-logo">
+                        <img class="logo-website" src="./assets/img/logo_v2.svg" alt="exemple.com" />
+                        <i class='bx bx-x' onclick="closeMenu()"></i>
+                    </div>
+                    <ul class="links">
+                        <li>
+                            <a href="#" onclick="showMenuInSideBar('menu-1','icon-1')">Services</a>
+                            <i class='bx bxs-chevron-down htmlcss-arrow arrow' id="icon-1"></i>
+                            <ul class="htmlCss-sub-menu sub-menu" id="menu-1">
+                                <li class="more">
+                                    <span><a href="#" onclick="showMenuInSideBar('menu-11','icon-11')">Service 1</a>
+                                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-11"></i>
+                                    </span>
+                                    <ul class="more-sub-menu sub-menu" id="menu-11">
+                                        <li><a href="#">Service 11</a></li>
+                                        <li><a href="#">Service 12</a></li>
+                                        <li><a href="#">Service 13</a></li>
+                                        <li><a href="#">Service 14</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="more">
+                                    <span><a href="#" onclick="showMenuInSideBar('menu-12','icon-12')">Service 2</a>
+                                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-12"></i>
+                                    </span>
+                                    <ul class="more-sub-menu sub-menu" id="menu-12">
+                                        <li><a href="#">Service 21</a></li>
+                                        <li><a href="#">Service 22</a></li>
+                                        <li><a href="#">Service 23</a></li>
+                                        <li><a href="#">Service 24</a></li>
+                                    </ul>
+                                </li>
+                                <li class="more">
+                                    <span><a href="#" onclick="showMenuInSideBar('menu-13','icon-13')">Service 3</a>
+                                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-13"></i>
+                                    </span>
+                                    <ul class="more-sub-menu sub-menu" id="menu-13">
+                                        <li><a href="#">Service 31</a></li>
+                                        <li><a href="#">Service 32</a></li>
+                                        <li><a href="#">Service 33</a></li>
+                                        <li><a href="#">Service 34</a></li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Price</a>
+                        </li>
+
+                        <li>
+                            <a href="#" onclick="showMenuInSideBar('menu-2','icon-2')">Cars</a>
+                            <i class='bx bxs-chevron-down htmlcss-arrow arrow' id="icon-2"></i>
+                            <ul class="js-sub-menu sub-menu" id="menu-2">
+                                <li><a href="#">Alfa Romeo</a></li>
+                                <li><a href="#">Audi</a></li>
+                                <li><a href="#">Lamborghini</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showMenuInSideBar('menu-6','icon-6')">Team</a>
+
+                        </li>
+                        <li>
+                            <a href="#">Vehicle Models</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="contact-to-rent mobile-sidebar">
+                        <div class="icon-phone-contact"> <img src="./assets/img/phone.svg" alt="phone"> </div>
+                        <div class="contact-area">
+                            <p class="help-contact">Need help?</p>
+                            <p class="number-contact">855 100 4444</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-to-rent">
+                    <div class="icon-phone-contact"> <img src="./assets/img/phone.svg" alt="phone"> </div>
+                    <div class="contact-area">
+                        <p class="help-contact">Need help?</p>
+                        <p class="number-contact">855 100 4444</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ======= End Section Navigation ======= -->
+    <!-- ======= Section 1 ======= -->
+    <main>
+        <section id="section-1" class="style-default-section">
+            <div class="swiper carousel-hero">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hero bg-hero-1">
+                        <div class="black-overlay"></div>
+                        <div class="details-hero">
+                            <div class="text-hero">
+                                <h1 class="title-slide">rent car</h1>
+                                <h2 class="model-car">* premium</h2>
+                            </div>
+
+                            <div class="price-rent">
+                                <p class="name-car">Bentley Bentayga </p>
+                                <p class="cost-rent"><span>$600 </span>/ Day</p>
+                            </div>
+                            <div class="group-btn-explore">
+
+                                <a class="base-btn  bg-yellow black-color border-btn-hero-1  btn-hover-transparent"
+                                    href="#">
+                                    <p>view details</p> <img src="./assets/img/arrow-chevron-right-white.svg"
+                                        alt="View details">
+                                </a>
+                                <a class="base-btn bg-transparent white-color border-btn-hero-2  btn-hover-white"
+                                    href="#">
+                                    <p>rent now</p><img src="./assets/img/arrow-chevron-right-black.svg"
+                                        alt="View details">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hero bg-hero-2">
+                        <div class="black-overlay"></div>
+                        <div class="details-hero">
+                            <div class="text-hero">
+                                <h1 class="title-slide">rent car</h1>
+                                <h2 class="model-car">* premium</h2>
+                            </div>
+
+                            <div class="price-rent">
+                                <p class="name-car">Bentley Bentayga </p>
+                                <p class="cost-rent"><span>$600 </span>/ Day</p>
+                            </div>
+                            <div class="group-btn-explore">
+
+                                <a class="base-btn  bg-yellow black-color border-btn-hero-1" href="#">
+                                    <p>view details</p> <img src="./assets/img/arrow-chevron-right-white.svg"
+                                        alt="View details">
+                                </a>
+                                <a class="base-btn bg-transparent white-color border-btn-hero-2" href="#">
+                                    <p>rent now</p><img src="./assets/img/arrow-chevron-right-black.svg"
+                                        alt="View details">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hero bg-hero-3">
+                        <div class="black-overlay"></div>
+                        <div class="details-hero">
+                            <div class="text-hero">
+                                <h1 class="title-slide">rent car</h1>
+                                <h2 class="model-car">* premium</h2>
+                            </div>
+
+                            <div class="price-rent">
+                                <p class="name-car">Bentley Bentayga </p>
+                                <p class="cost-rent"><span>$600 </span>/ Day</p>
+                            </div>
+                            <div class="group-btn-explore">
+                                <a class="base-btn bg-yellow black-color border-btn-hero-1 btn-hover" href="#">
+                                    <p>view details</p> <img src="./assets/img/arrow-chevron-right-white.svg"
+                                        alt="View details">
+                                </a>
+                                <a class="base-btn bg-transparent white-color border-btn-hero-2 btn-hover" href="#">
+                                    <p>rent now</p><img src="./assets/img/arrow-chevron-right-black.svg"
+                                        alt="View details">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+        <!-- ======= End Section 1 ======= -->
+
+        <!-- =======  Section 2 ======= -->
+        <section id="section-2" class="style-default-section">
+            <div class="main-container">
+                <div class="container-section">
+                    <div class="left-section-2">
+                        <div class="top-text-section-2">
+                            <p class="brand-name">ROYAL RENT</p>
+                            <h2 class="title-one-section-2">We Are More Than</h2>
+                            <h2 class="title-two-section-2">A Car Rental Company</h2>
+                            <p class="description-section-2">
+                                Car repair quisque sodales dui ut varius vestibulum drana tortor turpis porttiton tellus
+                                eu
+                                euismod nisl massa nutodio in the miss volume place urna lacinia eros nunta urna mauris
+                                vehicula rutrum in the miss on volume interdum.
+                            </p>
+                        </div>
+
+                        <div class="bottom-text-section-2">
+                            <div class="type-cars">
+                                <div class="car-sort">
+                                    <div class="div-check-type">
+                                        <img src="./assets/img/check.svg" alt="Check">
+                                    </div>
+                                    <p class="text-car-sort">
+                                        Sports and Luxury Cars
+                                    </p>
+                                </div>
+
+                                <div class="car-sort">
+                                    <div class="div-check-type">
+                                        <img src="./assets/img/check.svg" alt="Check">
+                                    </div>
+                                    <p class="text-car-sort">
+                                        Economy Cars
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="place-btn">
+                                <a class="base-btn bg-yellow black-color border-btn-hero-1" href="#">
+                                    <p>Read More</p> <img src="./assets/img/arrow-chevron-right-white.svg"
+                                        alt="View details">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-section-2">
+                        <img src="./assets/img/about.png" class="img-right-section-2" alt="Media buyer cars">
+                        <div class="place-btn-play-video">
+                            <div class="br-left-top">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="svg-section-2">
+                                    <path
+                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                        fill="#fff"></path>
+                                </svg>
+                            </div>
+                            <button class="btn-play-video"><img src="./assets/img/play.svg" alt="Play Button"> </button>
+                            <div class="br-right-bottom">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="svg-section-2">
+                                    <path
+                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                        fill="#fff"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ======= End  Section 2 ======= -->
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
