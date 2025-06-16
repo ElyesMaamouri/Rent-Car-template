@@ -60,10 +60,27 @@ menuCloseBtn.onclick = closeMenu;
   }
 
 
- 
+ //Carousel
     var swiper = new Swiper(".carousel-hero", {
       pagination: {
         el: ".swiper-pagination",
       },
     });
   
+
+    // Video Modal
+    
+    function openModal() {
+    document.getElementById("videoModal").style.display = "flex";
+    const video = document.getElementById("localVideo");
+    video.currentTime = 0;
+    video.play();
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("videoModal");
+    modal.style.display = "none";
+    const video = document.getElementById("localVideo");
+    video.pause();
+    video.currentTime = 0;
+  }

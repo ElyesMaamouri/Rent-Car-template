@@ -211,7 +211,7 @@
         <!-- =======  Section 2 ======= -->
         <section id="section-2" class="style-default-section">
             <div class="main-container">
-                <div class="container-section">
+                <div class="container-section-1">
                     <div class="left-section-2">
                         <div class="top-text-section-2">
                             <p class="brand-name">ROYAL RENT</p>
@@ -254,27 +254,22 @@
                         </div>
                     </div>
                     <div class="right-section-2">
-                        <img src="./assets/img/about.png" class="img-right-section-2" alt="Media buyer cars">
+                        <img src="./assets/img/img-1.webp" class="img-right-section-2" alt="Media buyer cars">
                         <div class="place-btn-play-video">
-                            <div class="br-left-top">
-                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    class="svg-section-2">
-                                    <path
-                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                        fill="#fff"></path>
-                                </svg>
-                            </div>
-                            <button class="btn-play-video"><img src="./assets/img/play.svg" alt="Play Button"> </button>
-                            <div class="br-right-bottom">
-                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    class="svg-section-2">
-                                    <path
-                                        d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                                        fill="#fff"></path>
-                                </svg>
-                            </div>
+                          
+                            <button class="btn-play-video" onclick="openModal()"><img src="./assets/img/play.svg" alt="Play Button"> </button>
+                           
                         </div>
                     </div>
+                      <div id="videoModal" class="modal" onclick="closeModal()">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <video id="localVideo" width="100%" controls>
+                                    <source src="assets/videos/Car Rental Video.mp4" type="video/mp4">
+                                    Votre navigateur ne supporte pas la lecture vidéo.
+                                </video>
+                            </div>
+                        </div>
                 </div>
 
             </div>

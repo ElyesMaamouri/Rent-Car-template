@@ -40,7 +40,7 @@ a {
 
 @media(max-width :1220px) {
     .main-container {
-        max-width: 95%;
+        max-width: 86%;
     }
 }
 
@@ -708,7 +708,11 @@ header.shadow-on-scroll.scrolled .icon-phone-contact img {
 /*--------------------------------------------------------------
 # Section 2
 --------------------------------------------------------------*/
-.container-section {
+#section-2 {
+    margin-top: 100px;
+}
+
+.container-section-1 {
     display: flex;
     gap: 20px;
 }
@@ -722,10 +726,16 @@ header.shadow-on-scroll.scrolled .icon-phone-contact img {
 .right-section-2 {
     position: relative;
 }
+
 .img-right-section-2 {
     border-radius: 30px;
+    width: 475px;
+    height: 475px;
+    object-fit: cover;
+    object-position: center;
+    
 }
-
+ 
 .top-text-section-2 {
     display: flex;
     flex-direction: column;
@@ -826,8 +836,8 @@ header.shadow-on-scroll.scrolled .icon-phone-contact img {
     cursor: pointer;
     position: absolute;
     top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .place-btn-play-video {
@@ -864,11 +874,77 @@ header.shadow-on-scroll.scrolled .icon-phone-contact img {
     width: 50px;
     height: 50px;
 }
+
 .svg-section-2 {
     width: 74px;
     height: 24px;
 }
 
-#section-2 {
-    margin-top: 100px;
+ .modal {
+   display: none;
+   position: fixed;
+   z-index: 1000;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.85);
+   justify-content: center;
+   align-items: center;
+ }
+
+ .modal-content {
+   position: relative;
+   background: #fff;
+   padding: 16px;
+   border-radius: 12px;
+   max-width: 90%;
+   width: 600px;
+ }
+
+ .close {
+   position: absolute;
+   top: -50px;
+   right: 10px;
+   font-size: 38px;
+   color: var(--white);
+   cursor: pointer;
+ }
+
+
+@media(max-width :1100px) {
+    .place-btn-play-video {
+        background: transparent;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media(max-width :992px) {
+    .container-section-1 {
+        flex-direction: column;
+    }
+.place-btn {
+    width: 100%;
+    max-width: 100%;
+}
+.place-btn a {
+    width: 100%;
+}
+.right-section-2 , .left-section-2 {
+    width: 100%;
+}
+.img-right-section-2 {
+    width: 100%;
+    height: 375px;
+}
+
+
+}
+
+@media(max-width :768px) {
+    .title-one-section-2, .title-two-section-2 {
+        line-height: 36px;
+    }
 }
