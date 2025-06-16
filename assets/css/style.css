@@ -26,7 +26,7 @@ body {
     --secondary-color: #1B1B1B;
     --white: #FFF;
     --gray-dark: #555555a1;
-    --btn-border-radius: 30px;
+    --border-radius-30: 30px;
 }
 
 a {
@@ -83,6 +83,65 @@ a {
     align-items: center;
     text-align: center; */
     /* margin-top: 100px; */
+}
+
+.description-section {
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 10px;
+    letter-spacing: 8px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+
+}
+
+.title-section {
+    font-family: Outfit;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 42px;
+    color: var(--secondary-color);
+}
+
+.title-section span {
+    color: var(--primary-color);
+}
+
+.br-left-top {
+    position: absolute;
+    top: -24px;
+    left: -1px;
+    width: 50px;
+    height: 50px;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    line-height: 1;
+}
+
+.br-right-bottom {
+    position: absolute;
+    bottom: -21px;
+    right: -50px;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    line-height: 1;
+    width: 50px;
+    height: 50px;
+}
+.icon-card-bottom-left {
+    position: absolute;
+    bottom: 0;
+    width: 85px;
+    height: 85px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 0 40px 0 0;
+    background: var(--white);
 }
 
 /*--------------------------------------------------------------
@@ -641,12 +700,12 @@ header.shadow-on-scroll.scrolled .icon-phone-contact img {
 }
 
 .border-btn-hero-2 {
-    border-radius: var(--btn-border-radius);
+    border-radius: var(--border-radius);
     border: 1px solid var(--white)
 }
 
 .border-btn-hero-1 {
-    border-radius: var(--btn-border-radius);
+    border-radius: var(--border-radius);
     border: 1px solid var(--primary-color)
 }
 
@@ -714,6 +773,7 @@ header.shadow-on-scroll.scrolled .icon-phone-contact img {
 
 .container-section-1 {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -728,14 +788,14 @@ header.shadow-on-scroll.scrolled .icon-phone-contact img {
 }
 
 .img-right-section-2 {
-    border-radius: 30px;
+    border-radius: var(--border-radius-30);
     width: 475px;
     height: 475px;
     object-fit: cover;
     object-position: center;
-    
+
 }
- 
+
 .top-text-section-2 {
     display: flex;
     flex-direction: column;
@@ -851,100 +911,147 @@ header.shadow-on-scroll.scrolled .icon-phone-contact img {
     background: var(--white);
 }
 
-.br-left-top {
-    position: absolute;
-    top: -24px;
-    left: -1px;
-    width: 50px;
-    height: 50px;
-    -webkit-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
-    line-height: 1;
-}
-
-.br-right-bottom {
-    position: absolute;
-    bottom: -21px;
-    right: -50px;
-    -webkit-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
-    line-height: 1;
-    width: 50px;
-    height: 50px;
-}
-
 .svg-section-2 {
     width: 74px;
     height: 24px;
 }
 
- .modal {
-   display: none;
-   position: fixed;
-   z-index: 1000;
-   left: 0;
-   top: 0;
-   height: 100%;
-   width: 100%;
-   background-color: rgba(0, 0, 0, 0.85);
-   justify-content: center;
-   align-items: center;
- }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
 
- .modal-content {
-   position: relative;
-   background: #fff;
-   padding: 16px;
-   border-radius: 12px;
-   max-width: 90%;
-   width: 600px;
- }
+.modal-content {
+    position: relative;
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    max-width: 90%;
+    width: 600px;
+}
 
- .close {
-   position: absolute;
-   top: -50px;
-   right: 10px;
-   font-size: 38px;
-   color: var(--white);
-   cursor: pointer;
- }
+.close {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    font-size: 38px;
+    color: var(--white);
+    cursor: pointer;
+}
 
 
-@media(max-width :1100px) {
+/* @media(max-width :1100px) {
     .place-btn-play-video {
         background: transparent;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-}
+} */
 
 @media(max-width :992px) {
     .container-section-1 {
         flex-direction: column;
     }
-.place-btn {
-    width: 100%;
-    max-width: 100%;
-}
-.place-btn a {
-    width: 100%;
-}
-.right-section-2 , .left-section-2 {
-    width: 100%;
-}
-.img-right-section-2 {
-    width: 100%;
-    height: 375px;
-}
+
+    .place-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .place-btn a {
+        width: 100%;
+    }
+
+    .right-section-2,
+    .left-section-2 {
+        width: 100%;
+    }
+
+    .img-right-section-2 {
+        width: 100%;
+        height: 375px;
+    }
 
 
 }
 
 @media(max-width :768px) {
-    .title-one-section-2, .title-two-section-2 {
+
+    .title-one-section-2,
+    .title-two-section-2 {
         line-height: 36px;
     }
+}
+
+/*--------------------------------------------------------------
+# Section 3
+--------------------------------------------------------------*/
+
+#section-3 {
+    margin-top: 100px;
+}
+
+.card-services-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+.item-card-service {
+    position: relative;
+}
+
+.image-service {
+    width: 375px;
+    max-width: 100%;
+    height: 375px;
+    object-fit: cover;
+    border-radius: var(--border-radius-30);
+}
+
+.number-of-service {
+    width: 70px;
+    position: absolute;
+    bottom: 0px;
+    height: 70px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.number-of-service p {
+ 
+    font-family: Outfit;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.details-service {
+    position: relative;
+}
+.name-service {
+   
+    font-family: Outfit;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+   
+   position: absolute;
+ top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    z-index: 1;
 }
