@@ -112,9 +112,9 @@ a {
 
 .br-left-top {
     position: absolute;
-    top: -24px;
-    left: -1px;
-    width: 50px;
+  top: -23px;
+    left: 1px;
+    width: 47px;
     height: 50px;
     -webkit-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
@@ -136,8 +136,8 @@ a {
 .icon-card-bottom-left {
     position: absolute;
     bottom: 0;
-    width: 85px;
-    height: 85px;
+    width: 78px;
+    height: 78px;
     line-height: 55px;
     text-align: center;
     border-radius: 0 40px 0 0;
@@ -885,8 +885,8 @@ header.shadow-on-scroll.scrolled .icon-phone-contact img {
 
 .btn-play-video {
 
-    width: 62px;
-    height: 62px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: var(--primary-color);
     display: flex;
@@ -902,9 +902,9 @@ header.shadow-on-scroll.scrolled .icon-phone-contact img {
 
 .place-btn-play-video {
     position: absolute;
-    bottom: 0;
-    width: 85px;
-    height: 85px;
+    bottom: -1px;
+    width: 88px;
+    height: 88px;
     line-height: 55px;
     text-align: center;
     border-radius: 0 40px 0 0;
@@ -913,7 +913,7 @@ header.shadow-on-scroll.scrolled .icon-phone-contact img {
 
 .svg-section-2 {
     width: 74px;
-    height: 24px;
+    height: 25px;
 }
 
 .modal {
