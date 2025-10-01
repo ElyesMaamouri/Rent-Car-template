@@ -61,12 +61,44 @@ menuCloseBtn.onclick = closeMenu;
 
 
  //Carousel
-    var swiper = new Swiper(".carousel-hero", {
+    var carouselHero = new Swiper(".carousel-hero", {
       pagination: {
         el: ".swiper-pagination",
       },
     });
   
+ var carouselCars = new Swiper(".carousel-cars", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+
+  // navigation par défaut pour desktop
+  navigation: {
+    nextEl: ".cars-next",
+    prevEl: ".cars-prev",
+  },
+
+  breakpoints: {
+    // Mobile
+    0: {
+      slidesPerView: 1,
+        loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      // Masquer navigation sur mobile
+    },
+    // Desktop
+    768: {
+      slidesPerView: 3,
+      autoplay: false,
+      // navigation par défaut
+    }
+  }
+});
+
+
+ 
 
     // Video Modal
     
@@ -86,11 +118,21 @@ menuCloseBtn.onclick = closeMenu;
   }
 
 
-   var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+  //  var swiper = new Swiper(".mySwiper", {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30,
+  //     pagination: {
+  //       el: ".swiper-pagination",
+  //       clickable: true,
+  //     },
+  //   });
+
+
+  const video = document.getElementById("bg-video");
+const playBtn = document.getElementById("play-btn");
+
+playBtn.addEventListener("click", () => {
+  console.log('test video')
+  video.play();
+  playBtn.style.display = "none"; // cacher bouton après lancement
+});
