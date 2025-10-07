@@ -136,3 +136,7 @@ playBtn.addEventListener("click", () => {
   video.play();
   playBtn.style.display = "none"; // cacher bouton après lancement
 });
+
+
+
+
