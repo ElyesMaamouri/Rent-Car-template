@@ -9,14 +9,7 @@
 
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Leaflet CSS -->
-   <link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-/>
-    <title>Contact</title>
+    <title>List cars</title>
 </head>
 
 <body>
@@ -128,84 +121,123 @@
             <div class="hero-section-page">
                 <div class="black-overlay"></div>
                 <div class="details-hero-page">
-                    <h1 class="page-name">Contact <span>Us</span></h1>
-                    <h2 class="description-page">Get in touch</h2>
+                    <h1 class="page-name">Select <span>Luxury Car</span></h1>
+                    <h2 class="description-page">Rent Now</h2>
                 </div>
             </div>
         </section>
-        <section id="section-14">
-            <div class="container-card-contact main-container">
-                <div class="card-contact">
-                    <img class="icon-card-contact" src="./assets/img/email-us.svg" alt="email">
-                    <h3 class="title-card-contact">Email Us</h3>
-                    <p class="description-card-contact">info@email.com</p>
+        <section id="section-16">
+            <div class="all-cars main-container">
+
+
+                <button class="floating-filter-btn" id="open-filters">
+                    <i class='bx bx-filter-alt'></i>
+                </button>
+
+
+                <div class="filters-cars" id="filtersMenu">
+                    <button class="close-filter" id="close-filters">
+                        <i class='bx bx-x'></i>
+                    </button>
+
+                    <div class="top-filter">
+                        <form action="">
+                            <div class="box-input-filter">
+                                <input class="input-filter" id="search-input" type="text" placeholder="Search..">
+                                <button class="btn-search"><i class='bx bx-search'></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="bottom-filter">
+                        <form action="">
+                            <div class="container-filters">
+
+                                <fieldset class="filter">
+                                    <legend>Select Brand</legend>
+                                    <div class="filter-item">
+                                        <input type="checkbox" id="lamborghini" name="brand" value="Lamborghini">
+                                        <label for="lamborghini">Lamborghini</label>
+                                    </div>
+                                    <div class="filter-item">
+                                        <input type="checkbox" id="astonMartin" name="brand" value="Aston Martin">
+                                        <label for="astonMartin">Aston Martin</label>
+                                    </div>
+                                    <div class="filter-item">
+                                        <input type="checkbox" id="bugatti" name="brand" value="Bugatti">
+                                        <label for="bugatti">Bugatti</label>
+                                    </div>
+                                    <div class="filter-item">
+                                        <input type="checkbox" id="bentley" name="brand" value="Bentley">
+                                        <label for="bentley">Bentley</label>
+                                    </div>
+                                    <div class="filter-item">
+                                        <input type="checkbox" id="rollsRoyce" name="brand" value="Rolls-Royce">
+                                        <label for="rollsRoyce">Rolls-Royce</label>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="filter">
+                                    <legend>Car Type</legend>
+                                    <div class="filter-item">
+                                        <input type="checkbox" id="luxuryCars" name="type" value="Luxury Cars">
+                                        <label for="luxuryCars">Luxury Cars</label>
+                                    </div>
+                                    <div class="filter-item">
+                                        <input type="checkbox" id="sportCars" name="type" value="Sport Cars">
+                                        <label for="sportCars">Sport Cars</label>
+                                    </div>
+                                    <div class="filter-item">
+                                        <input type="checkbox" id="suvs" name="type" value="SUVs">
+                                        <label for="suvs">SUVs</label>
+                                    </div>
+                                    <div class="filter-item">
+                                        <input type="checkbox" id="convertible" name="type" value="Convertible">
+                                        <label for="convertible">Convertible</label>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="filter">
+                                    <legend>Transmission</legend>
+                                    <div class="filter-item">
+                                        <input type="checkbox" id="automatic" name="transmission" value="Automatic">
+                                        <label for="automatic">Automatic</label>
+                                    </div>
+                                    <div class="filter-item">
+                                        <input type="checkbox" id="manual" name="transmission" value="Manual">
+                                        <label for="manual">Manual</label>
+                                    </div>
+                                </fieldset>
+
+
+
+                                <button class="btn-filter">Filter</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
-                <div class="card-contact">
 
-                    <img class="icon-card-contact" src="./assets/img/hours.svg" alt="Opening Hours">
-                    <h3 class="title-card-contact">Opening Hours</h3>
-                    <p class="description-card-contact">Mon-Sun: 8 AM - 7 PM</p>
-                </div>
+                <div class="container-list-cars ">
+                    <div class="car-item">
+                        <div class="top-car-item">
+                            <img class="image-car-item" src="./assets/img/car-1.jpg" alt="Audi">
+                        </div>
+                        <div class="bottom-car-item">
 
-                <div class="card-contact">
-                    <img class="icon-card-contact" src="./assets/img/ping-address.svg" alt="Address">
-                    <h3 class="title-card-contact">Our address</h3>
-                    <p class="description-card-contact">Dubai, Water Tower, Office 123</p>
-                </div>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="top-car-item">
+                            <img class="image-car-item" src="./assets/img/car-1.jpg" alt="Audi">
+                        </div>
+                        <div class="bottom-car-item">
 
-                <div class="card-contact">
-                    <img class="icon-card-contact" src="./assets/img/icon-phone-call.svg" alt="Address">
-                    <h3 class="title-card-contact">Call us</h3>
-                    <p class="description-card-contact">+971 52-333-4444</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="section-15">
-            <div class="container-contact-info main-container">
-                <div class="left-contact-info">
-                    <h4 class="title-contact-info">Contact Us</h4>
-                    <form action="">
-                        <div class="group-input">
-                            <div class="input-box">
-                                <label class="label-contact-style" for="full-name">Full Name</label>
-                                <input class="input-contact-style" type="text" id="full-name"
-                                    placeholder="Your full name">
-                            </div>
-                            <div class="input-box">
-                                <label class="label-contact-style" for="email-address">Email Address</label>
-                                <input class="input-contact-style" type="email" id="email-address"
-                                    placeholder="Your email address">
-                            </div>
-                        </div>
-                        <div class="group-input">
-                            <div class="input-box">
-                                <label class="label-contact-style" for="number-phone">Number</label>
-                                <input class="input-contact-style" type="number" id="fnumber-phone"
-                                    placeholder="Your phone number">
-                            </div>
-                            <div class="input-box">
-                                <label class="label-contact-style" for="subject">Subject</label>
-                                <input class="input-contact-style" type="text" id="Subject" placeholder="Your Subject">
-                            </div>
-                        </div>
-                        <div class="message-box">
-                            <label class="label-contact-style" for="message">Message</label>
-                            <textarea class="input-contact-style textarea-style" placeholder="Message" name="message"
-                                id="message"></textarea>
-                        </div>
-                        <button type="submit" class="btn-contact-style">Submit</button>
-                    </form>
-                </div>
-                <div class="right-contact-info">
-                          <h4 class="title-contact-info">Location</h4>
-                    <div class="map-address" id="map"></div>
-                </div>
-            </div>
-        </section>
-
-
-          <!-- =======  Section 9 ======= -->
         <section id="section-9" class="bg-section-9">
             <!-- <div class="black-overlay"></div> -->
             <div class="details-contact main-container">
@@ -304,15 +336,8 @@
             </div>
         </footer>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Leaflet JS -->
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
-</script>
-       <script src="./assets/js/map.js"></script>
+    <script src="./assets/js/filter.js"></script>
     <script src="./assets/js/index.js"></script>
-
-   
 </body>
 
 </html>

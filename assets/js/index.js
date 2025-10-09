@@ -137,6 +137,4 @@ playBtn.addEventListener("click", () => {
   playBtn.style.display = "none"; // cacher bouton après lancement
 });
 
-
-
-
+ 
