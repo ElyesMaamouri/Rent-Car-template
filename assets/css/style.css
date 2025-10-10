@@ -2562,6 +2562,7 @@ input[type=number] {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 
@@ -2742,7 +2743,7 @@ input[type=number] {
     font-size: 28px;
     cursor: pointer;
     position: absolute;
-     background: none;
+    background: none;
     border: none;
     font-size: 28px;
     cursor: pointer;
@@ -2761,21 +2762,89 @@ body.menu-open::before {
     background: rgba(0, 0, 0, 0.4);
     z-index: 998;
 }
- #section-16 .container-list-cars {
+
+#section-16 .container-list-cars {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
- }
+}
+
 #section-16 .image-car-item {
     width: 376px;
     height: 210px;
     max-width: 100%;
-     object-fit: cover;
+    object-fit: cover;
     aspect-ratio: 1;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-@media (min-width: 992px) {
+
+#section-16 .bottom-car-item {
+    padding: 30px;
+    border-bottom-left-radius: var(--border-radius-30);
+    border-bottom-right-radius: var(--border-radius-30);
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#section-16 .name-of-car {
+    font-family: Outfit;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    line-height: 20px;
+    cursor: pointer;
+}
+
+#section-16 .details-of-car {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section-16 .details-item-car {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+#section-16 .details-item-car p,
+#section-16 .text-details-car,
+#section-16 .cost-per-day p,
+#section-16 .cost-per-day a
+ {
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray-dark);
+    line-height: 20px;
+}
+ #section-16 .price-rent-details span {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+ }
+ #section-16 .cost-per-day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+ }
+  #section-16 .cost-per-day a {
+    padding: 10px 20px;
+    border-radius: var(--border-radius-30);
+    background: var(--primary-color);
+    color: var(--secondary-color);
+   
+  }
+  #section-16 .car-item {
+    background: #F2F2F2;
+    border-radius: var(--border-radius-30);
+  }
+ @media (min-width: 992px) {
     body.menu-open::before {
         display: none !important;
         content: none !important;
@@ -2821,5 +2890,19 @@ body.menu-open::before {
 @media(max-width :992px) {
     #section-16 .container-cars {
         width: 100%;
+    }
+}
+
+@media(max-width :576px) {
+      #section-16 .container-list-cars {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #section-16 .image-car-item {
+        width: 100%;
+     
+    }
+    #section-16 .all-cars {
+        flex-direction: column;
     }
 }
